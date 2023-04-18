@@ -1,0 +1,200 @@
+:root {
+  --color-blue: #66e2dc;
+  --color-orange: #fa7453;
+  --color-yellow: #ffb964;
+  --color-light: #fcfaf9;
+  --color-dark: #191826;
+
+  --test: 1px solid red;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--color-dark);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 144rem;
+  margin: 0 auto;
+  padding: 6.19rem 16.6rem 9.1rem 16.6rem;
+  background-color: var(--color-light);
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.wrapper__pattern--body {
+  position: absolute;
+  top: -20rem;
+  left: -13.6rem;
+  width: 161.3rem;
+  height: 175.8rem;
+  z-index: -1;
+}
+
+.wrapper__pattern {
+  position: absolute;
+  right: 0;
+  top: -4rem;
+}
+
+.logo {
+  width: 14.6rem;
+  margin-bottom: 12.7rem;
+}
+
+header {
+  max-width: 101.5rem;
+}
+
+.heading-primary {
+  font-size: 8.8rem;
+  line-height: 8.8rem;
+  letter-spacing: -1px;
+  margin-bottom: 4rem;
+}
+
+.header__content {
+  max-width: 82.5rem;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  margin-bottom: 32.1rem;
+}
+
+.info {
+  background-color: var(--color-dark);
+  min-height: 60rem;
+  position: relative;
+  border-radius: 1.2rem;
+  color: var(--color-light);
+  margin-bottom: 20.2rem;
+}
+
+.wrapper__pattern,
+.info__app,
+.info__pattern {
+  width: 31.2rem;
+}
+
+.info__app {
+  position: absolute;
+  left: 10.2rem;
+  top: -21.3rem;
+  z-index: 2;
+}
+
+.info__pattern {
+  position: absolute;
+  left: 33.6rem;
+  top: -4rem;
+}
+
+.info__cta {
+  background-color: var(--color-orange);
+  position: absolute;
+  right: 9.5rem;
+  top: 9rem;
+  max-width: 44.6rem;
+  padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+  border-radius: 1.2rem;
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  margin-bottom: 2.2rem;
+}
+
+.info__content {
+  font-size: 2rem;
+  line-height: 3.4rem;
+  margin-bottom: 32.1rem;
+  margin-bottom: 3.9rem;
+}
+
+.info__price {
+  font-size: 6.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 4.6rem;
+}
+
+.info__price span {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: -0.18px;
+  line-height: 3.2rem;
+  border-radius: 1.2rem;
+  padding: 1.5rem 0;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:not(:last-of-type) {
+  margin-bottom: 1.6rem;
+}
+
+.btn__ios {
+  background-color: var(--color-dark);
+  color: currentColor;
+}
+
+.btn__android {
+  background-color: var(--color-light);
+}
+
+footer {
+  display: flex;
+}
+
+.footer__logo {
+  flex: 0 1 28.5rem;
+}
+
+.footer__copyright {
+  flex: 0 1 36.6rem;
+}
+
+.footer__social {
+  flex: 0 1 45.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
