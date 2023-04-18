@@ -173,10 +173,19 @@ header {
 .btn__ios {
   background-color: var(--color-dark);
   color: currentColor;
+  transition: all 0.2s;
+}
+
+.btn__ios:is(:hover, :focus) {
+  background-color: var(--color-blue);
 }
 
 .btn__android {
   background-color: var(--color-light);
+}
+
+.btn__android:is(:hover, :focus) {
+  background-color: var(--color-yellow);
 }
 
 footer {
@@ -197,4 +206,15 @@ footer {
   align-items: center;
   justify-content: end;
   gap: 2rem;
+}
+
+.footer__social {
+  transition: all 0.2s;
+}
+
+.footer__social--facebook svg:hover,
+.footer__social--instagram svg:hover,
+.footer__social--twitter svg:hover {
+  cursor: pointer;
+  fill: var(--color-orange);
 }
