@@ -37,13 +37,19 @@ video {
 }
 
 .wrapper {
-  width: 144rem;
+  max-width: 144rem;
   margin: 0 auto;
   padding: 6.19rem 16.6rem 9.1rem 16.6rem;
   background-color: var(--color-light);
   position: relative;
   overflow: hidden;
   z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 6.19rem 3.9rem 8.5rem 3.3rem;
+  }
 }
 
 .wrapper__pattern--body {
@@ -59,11 +65,26 @@ video {
   position: absolute;
   right: 0;
   top: -4rem;
+  width: 31.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper__pattern {
+    width: 26.6rem;
+    top: -3.2rem;
+    right: -3.56rem;
+  }
 }
 
 .logo {
   width: 14.6rem;
   margin-bottom: 12.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: 9.5rem;
+  }
 }
 
 header {
@@ -77,11 +98,28 @@ header {
   margin-bottom: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+  .heading-primary {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    max-width: 52rem;
+  }
+}
+
 .header__content {
   max-width: 82.5rem;
   font-size: 2rem;
   line-height: 3.4rem;
   margin-bottom: 32.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__content {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    max-width: 51.4rem;
+    margin-bottom: 24.9rem;
+  }
 }
 
 .info {
@@ -93,10 +131,22 @@ header {
   margin-bottom: 20.2rem;
 }
 
-.wrapper__pattern,
+@media screen and (max-width: 768px) {
+  .info {
+    margin-bottom: 18.3rem;
+  }
+}
+
 .info__app,
 .info__pattern {
   width: 31.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .info__app,
+  .info__pattern {
+    width: 28rem;
+  }
 }
 
 .info__app {
@@ -106,10 +156,24 @@ header {
   z-index: 2;
 }
 
+@media screen and (max-width: 768px) {
+  .info__app {
+    top: -13.4rem;
+    left: 6.4rem;
+  }
+}
+
 .info__pattern {
   position: absolute;
   left: 33.6rem;
   top: -4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .info__pattern {
+    left: 22.9rem;
+    top: -3.1rem;
+  }
 }
 
 .info__cta {
@@ -120,12 +184,29 @@ header {
   max-width: 44.6rem;
   padding: 5.8rem 5.9rem 4.8rem 5.4rem;
   border-radius: 1.2rem;
+  z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .info__cta {
+    max-width: 39.9rem;
+    right: 5.8rem;
+    top: 15rem;
+    padding: 4.8rem 4.9rem 4.8rem 4.8rem;
+  }
 }
 
 .heading-secondary {
   font-size: 4rem;
   line-height: 5.2rem;
   margin-bottom: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-secondary {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
 }
 
 .info__content {
@@ -135,13 +216,28 @@ header {
   margin-bottom: 3.9rem;
 }
 
+@media screen and (max-width: 768px) {
+  .info__content {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3.6rem;
+  }
+}
+
 .info__price {
   font-size: 6.5rem;
+  line-height: 5.2rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 1.6rem;
   margin-bottom: 4.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .info__price {
+    margin-bottom: 3.2rem;
+  }
 }
 
 .info__price span {
@@ -190,14 +286,28 @@ header {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__logo {
   flex: 0 1 28.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    flex: 0 1 100%;
+    margin-bottom: 3.2rem;
+  }
+}
+
 .footer__copyright {
   flex: 0 1 36.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__copyright {
+    flex: 0 1 50%;
+  }
 }
 
 .footer__social {
@@ -206,6 +316,12 @@ footer {
   align-items: center;
   justify-content: end;
   gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__social {
+    flex: 0 1 50%;
+  }
 }
 
 .footer__social {
